@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>DittoDumper</title>
+   <link rel="shortcut icon" type="image/jpg" href="/cdn/favicon.jpg">
+
+
+<!-- To get the Timer-->
+	<script src="/js/timer.js"></script>
+
+<!-- Main Page-->
+	</head>
+		<body onLoad="javascript:Init()" bgcolor="black">
+ 	</head>
+  		
+  		<body> 
+  			<!-- Get the GIF and Timer all together-->
+			<p style="text-align: center;"><img src="/cdn/jamin.gif" alt="" width="360" height="360" /> 
+			<div style="text-align:center; color:white"> You've been jamin for <span id="time">00:00:00</span>.</div>
+				<h2 style="text-align:center; color:white"> The current song is: <div id="chgtext">None</div></h2>
+
+
+				<!-- For the Audio Magic-->
+				<audio id="normalcat" loop>
+					<source src="/cdn/normalcat.mp3" type="audio/mpeg">
+				</audio>
+				<audio id="technocat" loop>
+					<source src="/cdn/technocat.mp3" type="audio/mpeg">
+				</audio>
+				
+				<!-- For the Audio Buttons Pause, Play and listing current song-->
+				<p style="text-align: center;"><button onclick="normalcatPlaying(); document.getElementById('chgtext').innerHTML='Ievan Polkka Bongo Remix';" type="button">Ievan Polkka Bongo Remix</button>
+				<p style="text-align: center;"><button onclick="technocatPlaying(); document.getElementById('chgtext').innerHTML='Ievan Polkka Bongo Techno Remix';" type="button">Ievan Polkka Bongo Techno Remix</button>
+				<script>
+					var normalAudio = document.getElementById("normalcat");
+					var technoAudio = document.getElementById("technocat");
+
+						function normalcatPlaying() {
+							if(!technoAudio.paused) technoAudio.pause();
+  							return normalAudio.paused ? normalAudio.play() : normalAudio.pause();
+						};
+
+						function technocatPlaying() {
+							if(!normalAudio.paused) normalAudio.pause();
+  							return technoAudio.paused ? technoAudio.play() : technoAudio.pause();
+						};
+
+				</script>
+		 </body>
+
+</html>

@@ -4,67 +4,20 @@
    <meta charset="utf-8">
    <title>DittoDumper</title>
    <link rel="shortcut icon" type="image/jpg" href="/cdn/favicon.jpg">
-   		<script>
 
-var time
-var output
 
-function Init(){
-	time = 1;
-	StartTimer()
-}
+<!-- To get the Timer-->   
+	<script src="/js/timer.js"></script>
 
-function convertOutput(){
-	var hours = 0
-	var mins = 0
-	var secs = time
-	
-	while(secs >= 60){
-		secs -= 60;
-		mins += 1;
-	}
-	
-	if(secs < 10){
-		secs = "0" + secs;
-	}
-	
-	while(mins >= 60){
-		mins -= 60;
-		hours += 1;
-	}
-	
-	if(mins < 10){
-		mins = "0" + mins;
-	}
-	
-	output = hours + ":" + mins + ":" + secs;
-}
-
-function StartTimer(){
-	time += 1;
-	convertOutput();
-	document.getElementById("time").innerHTML = output;
-	self.setTimeout("StartTimer()", 1000);
-}
-
-		</script>
-
+<!-- Main Page-->
 	</head>
-<body onLoad="javascript:Init()" bgcolor="black">
- </head>
-   <body> 
-		<p style="text-align: center;"><img src="/cdn/wickedpat.gif" alt="" width="360" height="360" /></p>  
+		<body onLoad="javascript:Init()" bgcolor="black">
+	</head>
 
-		<div style="text-align:center; color:white">
-
-
-
-You've been pattin for <span id="time">00:00:00</span>.
-</div>
-   </body>
-
-
+		<body> 
+			<!-- Get the GIF and Timer all together-->
+			<p style="text-align: center;"><img src="/cdn/wickedpat.gif" alt="" width="360" height="360" /></p>  
+			<div style="text-align:center; color:white">You've been pattin for <span id="time">00:00:00</span>.</div>
+  		</body>
 
 </html>
-
-
