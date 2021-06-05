@@ -1,7 +1,7 @@
 # dittodumper
 Just a place to be a DittoDumper
 
-A site for fun about the [dittodumper](https://betterttv.com/emotes/603463937c74605395f329f9) emote from BTTV
+A site for fun about the [dittodumper](https://betterttv.com/emotes/603463937c74605395f329f9) emote from BTTV and a few other emotes.
 
 [To get Ditto Dumpin](https://dittodump.in/)
 
