@@ -30,7 +30,7 @@
 
 							function tofatPlaying() {
 								if(!tofatAudio.paused) tofatAudio.play();
-								return tofatAudio.play() : tofatAudio.pause();
+								if(!tofatAudio.paused) tofatAudio.play();
 							};
 					</script>
 
