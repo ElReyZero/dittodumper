@@ -29,8 +29,13 @@
 						var tofatAudio = document.getElementById("tofat");
 
 						function playPause() {
-						  tofatAudio.play();
-						}
+						  if(tofatAudio.paused){
+						  	tofatAudio.play();
+								}
+						  else {
+						  	tofatAudio.pause();
+						 		}
+						}	
 						
 						function playPause() {
 						  tofatAudio.pause();
