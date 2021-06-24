@@ -24,16 +24,18 @@
 					<source src="/cdn/tofat.mp3" type="audio/mpeg">
 				</audio>
 
-					<p style="text-align: center;"><button onclick="tofatPlaying();" type="button">Pull Over - Trina</button>
+					<p style="text-align: center;"><button onclick="playPause();" type="button">Pull Over - Trina</button>
 					<script>
 						var tofatAudio = document.getElementById("tofat");
 
-							function tofatPlaying() {
-								if(!tofatAudio.paused) tofatAudio.play();
-							};
-							function tofatPlaying() {
-								if(!tofatAudio.playing) tofatAudio.pause();
-							};
+						function playPause() {
+						  audio.play();
+						}
+						
+						function playPause() {
+						  audio.pause();
+						}
+
 					</script>
 
    		</body>
