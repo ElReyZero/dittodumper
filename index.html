@@ -18,6 +18,21 @@
    			<!-- Get the GIF and Timer all together-->
 			<p style="text-align: center;"><img src="/cdn/dittodumper.gif" alt="" width="360" height="360" /></p>  
 			<div style="text-align:center; color:white">You've been DittoDumpin for <span id="time">00:00:00</span>.</div>
+
+				<!-- To play music -->
+				<audio id="tofat" loop>
+					<source src="/cdn/tofat.mp3" type="audio/mpeg">
+				</audio>
+
+					<p style="text-align: center;"><button onclick="tofatPlaying(); document.getElementById('chgtext').innerHTML='Ievan Polkka Bongo Remix';" type="button">Pull Over - Trina</button>
+					<script>
+						var tofatAudio = document.getElementById("tofat");
+
+							function tofatPlaying() {
+								if(!tofatAudio.paused) tofatAudio.pause();
+							};
+					</script>
+
    		</body>
 
 </html>
