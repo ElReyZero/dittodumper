@@ -24,13 +24,13 @@
 					<source src="/cdn/tofat.mp3" type="audio/mpeg">
 				</audio>
 
-					<p style="text-align: center;"><button onclick="tofatPlaying(); document.getElementById('chgtext').innerHTML='Ievan Polkka Bongo Remix';" type="button">Pull Over - Trina</button>
+					<p style="text-align: center;"><button onclick="tofatPlaying();" type="button">Pull Over - Trina</button>
 					<script>
 						var tofatAudio = document.getElementById("tofat");
 
 							function tofatPlaying() {
-								if(!tofatAudio.paused) tofatAudio.pause();
-								return tofatAudio.paused ? tofatAudio.play() : tofatAudio.pause();
+								if(!tofatAudio.paused) tofatAudio.play();
+								return tofatAudio.play() : tofatAudio.pause();
 							};
 					</script>
 
