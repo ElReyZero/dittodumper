@@ -40,17 +40,17 @@
 					<source src="/cdn/tofat.mp3" type="audio/mpeg">
 				</audio>
 
-					<p style="text-align: center;"><button onclick="playPause('toFat');" type="button">Pull Over - Trina</button>
+					<p style="text-align: center;"><button onclick="playPause('toFat')" type="button">Pull Over - Trina</button>
 					<script>
 						//var tofatAudio = document.getElementById("tofat");
 
 						function playPause(songName) {
-						var tofatAudio = document.getElementById(songName);
-						  if(tofatAudio.paused){
-						  	tofatAudio.play();
+						var songAudio = document.getElementById(songName);
+						  if(songAudio.paused){
+						  	songAudio.play();
 								}
 						  else {
-						  	tofatAudio.pause();
+						  	songAudio.pause();
 						 		}
 						}
 					</script>
