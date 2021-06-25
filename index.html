@@ -79,8 +79,9 @@
 				}
 				.btn:hover {background-color: rgb(37, 37, 37)}
 			</style>
+			<!-- Randomizer Script -->
 			<script>
-				var whatButton = document.getElementsById('whatBtn');
+				var whatButton = document.getElementById('whatBtn');
 				var buttonAlignmentArray = ["left", "center", "right"];
 				var alignmentDecision = buttonAlignmentArray[Math.round(Math.random()*2)];
 				whatButton.style.textAlign = alignmentDecision;
