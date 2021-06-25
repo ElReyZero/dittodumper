@@ -40,11 +40,12 @@
 					<source src="/cdn/tofat.mp3" type="audio/mpeg">
 				</audio>
 
-					<p style="text-align: center;"><button onclick="playPause();" type="button">Pull Over - Trina</button>
+					<p style="text-align: center;"><button onclick="playPause('toFat');" type="button">Pull Over - Trina</button>
 					<script>
-						var tofatAudio = document.getElementById("tofat");
+						//var tofatAudio = document.getElementById("tofat");
 
-						function playPause() {
+						function playPause(songName) {
+						var tofatAudio = document.getElementById(songName);
 						  if(tofatAudio.paused){
 						  	tofatAudio.play();
 								}
@@ -55,7 +56,7 @@
 					</script>
 		<footer>
 			<!-- Easter Egg Button -->  
-			<button class="btn" value="whatW" onclick=playPause() type="button">whatW</button>
+			<button class="btn" value="whatW" onclick="playPause('toWhatW')" type="button">whatW</button>
 			<style>
 				body {
 					margin: 0;
