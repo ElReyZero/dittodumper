@@ -57,10 +57,13 @@
 			<!-- Easter Egg Button -->
 			<button class="btn" id="whatBtn" value="whatW" onclick="playPause('toWhatW')" type="button">whatW</button>
 			<style>
+				:root{
+					--buttonAlignment: right;
+				}
 				body {
 					margin: 0;
 					padding: 0;
-					text-align: right;
+					text-align: var(--buttonAlignment);
 				}
 			  
 				h1 {
@@ -85,7 +88,7 @@
 				var whatButton = document.getElementById('whatBtn');
 				var buttonAlignmentArray = ["left", "center", "right"];
 				var alignmentDecision = buttonAlignmentArray[Math.round(Math.random()*2)];
-				whatButton.style.alignContent = alignmentDecision;
+				whatButton.style.setProperty("--buttonAlignment", alignmentDecision);
 			</script>
 
 			<audio id="toWhatW" loop>
