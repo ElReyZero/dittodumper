@@ -53,7 +53,37 @@
 						 		}
 						}
 					</script>
-
+		<footer>
+			<!-- Easter Egg Button -->  
+			<button class="btn" value="whatW" onclick=playPause() type="button">whatW</button>
+			<style>
+				body {
+					margin: 0;
+					padding: 0;
+					text-align: right;
+				}
+			  
+				h1 {
+					color: rgba(255, 255, 255, 0);
+				}
+			  
+				/* Styling the button */
+				.btn {
+					cursor: pointer;
+					border: 1px solid #ffffff00;
+					background-color: transparent;
+					height: 50px;
+					width: 200px;
+					color: #000000;
+					font-size: 1.5em;
+					box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+				}
+				.btn:hover {background-color: rgb(37, 37, 37)}
+			</style>
+			<audio id="toWhatW" loop>
+				<source src="/cdn/whatW.mp3" type="audio/mpeg">
+			</audio>
+		   </footer>
    		</body>
 
 </html>
