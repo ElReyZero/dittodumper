@@ -60,6 +60,7 @@
 				body {
 					margin: 0;
 					padding: 0;
+					text-align: right;
 				}
 			  
 				h1 {
@@ -84,8 +85,7 @@
 				var whatButton = document.getElementById('whatBtn');
 				var buttonAlignmentArray = ["left", "center", "right"];
 				var alignmentDecision = buttonAlignmentArray[Math.round(Math.random()*2)];
-				whatButton.style.textAlign = alignmentDecision;
-				console.log(alignmentDecision);
+				whatButton.style.alignSelf = alignmentDecision;
 			</script>
 
 			<audio id="toWhatW" loop>
